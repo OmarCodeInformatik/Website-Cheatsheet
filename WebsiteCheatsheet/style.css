@@ -1,0 +1,846 @@
+        h1 {
+            margin: 0;
+            position: relative;
+            transition: transform 0.3s ease, margin-bottom 0.3s ease;
+            font-family: fantasy;
+            font-weight: 1;
+            font-size: 70px;
+            text-align: center;
+        }
+        p {
+            margin: 0;
+            position: relative;
+            transition: transform 0.3s ease, margin-bottom 0.3s ease;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 20px;
+            color: white;
+        }
+        #pointColor {
+            color: rgb(255, 0, 0);
+            font-size: 25px;
+        }
+        #pointColor2 {
+            color: rgb(28, 183, 188);
+            font-size: 25px;
+        }
+        #pointColor3 {
+            color: rgb(255, 213, 1);
+            font-size: 25px;
+        }
+        .header-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+        h2:hover {
+            transition: transform 0.3s ease;
+            transform-origin: left;
+        }
+        #InhaltTitel {
+            font-size: 25px;
+            color: rgb(185, 36, 36);
+        }
+        #InhaltTitel2 {
+            font-size: 25px;
+            color: rgb(28, 183, 188);
+        }
+        #InhaltTitel3 {
+            font-size: 25px;
+            color: rgb(255, 213, 1);
+        }
+        #inhalt p {
+            font-size: 18px;
+            margin: 0;
+        }
+        #inhalt a {
+            text-decoration: none;
+            color: inherit;
+        }
+        #inhalt:hover {
+            transform: scale(1.05);
+            color: white;
+            cursor: pointer;
+            transition-duration: 1s;
+        }
+        #inhalt {
+            color: white;
+            font-size: 12px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            margin: 0  auto 1rem;
+            background: rgba(255, 255, 255, 0.053);
+            -webkit-backdrop-filter: blur(8px);
+            backdrop-filter: blur(8px);
+            border-radius: 25px;
+            padding: 20px 24px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 6px 18px rgba(255, 255, 255, 0.1);
+            max-width: 800px;
+            width: 90%;
+            overflow: visible;
+        }
+        #eins:hover {
+            transform: scale(1.05);
+            color: white;
+            cursor: pointer;
+            transition-duration: 1s;
+        }
+        #eins {
+            color: white;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            margin: 0  auto 1rem;
+            background: rgba(255, 251, 15, 0.185);
+            -webkit-backdrop-filter: blur(8px);
+            backdrop-filter: blur(8px);
+            border-radius: 25px;
+            padding: 20px 24px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 6px 18px rgba(255, 255, 255, 0.1);
+            max-width: 800px;
+            width: 90%;
+            overflow: visible;
+        }
+        #zwei:hover {
+            transform: scale(1.05);
+            color: rgb(255, 255, 255);
+            cursor: pointer;
+            transition-duration: 1s;
+        }
+        #zwei {
+            color: rgb(255, 255, 255);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            margin: 0  auto 1rem;
+            background: rgba(42, 190, 153, 0.185);
+            -webkit-backdrop-filter: blur(8px);
+            backdrop-filter: blur(8px);
+            border-radius: 25px;
+            padding: 20px 24px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 6px 18px rgba(255, 255, 255, 0.1);
+            max-width: 800px;
+            width: 90%;
+            overflow: visible;
+        }
+        #drei:hover {
+            transform: scale(1.05);
+            color: rgb(255, 255, 255);
+            cursor: pointer;
+            transition-duration: 1s;
+        }
+        #drei {
+            color: rgb(255, 255, 255);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            margin: 0  auto 1rem;
+            background: rgba(255, 1, 1, 0.185);
+            -webkit-backdrop-filter: blur(8px);
+            backdrop-filter: blur(8px);
+            border-radius: 25px;
+            padding: 20px 24px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 6px 18px rgba(255, 255, 255, 0.1);
+            max-width: 800px;
+            width: 90%;
+            overflow: visible;
+        }
+        #vier:hover {
+            transform: scale(1.05);
+            color: rgb(255, 255, 255);
+            cursor: pointer;
+            transition-duration: 1s;
+        }
+        #vier {
+            color: rgb(255, 255, 255);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            margin: 0  auto 1rem;
+            background: rgba(183, 1, 255, 0.185);
+            -webkit-backdrop-filter: blur(8px);
+            backdrop-filter: blur(8px);
+            border-radius: 25px;
+            padding: 20px 24px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 6px 18px rgba(255, 255, 255, 0.1);
+            max-width: 800px;
+            width: 90%;
+            overflow: visible;
+        }     
+        #fünf:hover {
+        transform: scale(1.05);
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+        transition-duration: 1s;
+        }
+        #fünf {
+            color: rgb(255, 255, 255);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            margin: 0  auto 1rem;
+            background: rgba(255, 1, 111, 0.338);
+            -webkit-backdrop-filter: blur(8px);
+            backdrop-filter: blur(8px);
+            border-radius: 25px;
+            padding: 20px 24px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 6px 18px rgba(255, 255, 255, 0.1);
+            max-width: 800px;
+            width: 90%;
+            overflow: visible;
+        }
+        #sechs:hover {
+        transform: scale(1.05);
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+        transition-duration: 1s;
+        }
+        #sechs {
+            color: rgb(255, 255, 255);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            margin: 0  auto 1rem;
+            background: rgba(14, 255, 1, 0.338);
+            -webkit-backdrop-filter: blur(8px);
+            backdrop-filter: blur(8px);
+            border-radius: 25px;
+            padding: 20px 24px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 6px 18px rgba(255, 255, 255, 0.1);
+            max-width: 800px;
+            width: 90%;
+            overflow: visible;
+        }
+        #sieben:hover {
+            transform: scale(1.05);
+            color: rgb(255, 255, 255);
+            cursor: pointer;
+            transition-duration: 1s;
+        }
+        #sieben {
+            color: rgb(255, 255, 255);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            margin: 0  auto 1rem;
+            background: rgba(1, 9, 255, 0.185);
+            -webkit-backdrop-filter: blur(8px);
+            backdrop-filter: blur(8px);
+            border-radius: 25px;
+            padding: 20px 24px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 6px 18px rgba(255, 255, 255, 0.1);
+            max-width: 800px;
+            width: 90%;
+            overflow: visible;
+        }
+        #acht:hover {
+            transform: scale(1.05);
+            color: rgb(255, 255, 255);
+            cursor: pointer;
+            transition-duration: 1s;
+        }
+        #acht {
+            color: rgb(255, 255, 255);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            margin: 0  auto 1rem;
+            background: rgba(144, 141, 90, 0.185);
+            -webkit-backdrop-filter: blur(8px);
+            backdrop-filter: blur(8px);
+            border-radius: 25px;
+            padding: 20px 24px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 6px 18px rgba(255, 255, 255, 0.1);
+            max-width: 800px;
+            width: 90%;
+            overflow: visible;
+        }
+        #neun:hover {
+            transform: scale(1.05);
+            color: rgb(255, 255, 255);
+            cursor: pointer;
+            transition-duration: 1s;
+        }
+        #neun {
+            color: rgb(255, 255, 255);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            margin: 0  auto 1rem;
+            background: rgba(255, 1, 255, 0.185);
+            -webkit-backdrop-filter: blur(8px);
+            backdrop-filter: blur(8px);
+            border-radius: 25px;
+            padding: 20px 24px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 6px 18px rgba(255, 255, 255, 0.1);
+            max-width: 800px;
+            width: 90%;
+            overflow: visible;
+        }
+        #zehn:hover {
+            transform: scale(1.05);
+            color: white;
+            cursor: pointer;
+            transition-duration: 1s;
+        }
+        #zehn {
+            color: white;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            margin: 0  auto 1rem;
+            background: rgba(255, 251, 15, 0.185);
+            -webkit-backdrop-filter: blur(8px);
+            backdrop-filter: blur(8px);
+            border-radius: 25px;
+            padding: 20px 24px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 6px 18px rgba(255, 255, 255, 0.1);
+            max-width: 800px;
+            width: 90%;
+            overflow: visible;
+        }
+        #elf:hover {
+            transform: scale(1.05);
+            color: rgb(255, 255, 255);
+            cursor: pointer;
+            transition-duration: 1s;
+        }
+        #elf {
+            color: rgb(255, 255, 255);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            margin: 0  auto 1rem;
+            background: rgba(42, 190, 153, 0.185);
+            -webkit-backdrop-filter: blur(8px);
+            backdrop-filter: blur(8px);
+            border-radius: 25px;
+            padding: 20px 24px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 6px 18px rgba(255, 255, 255, 0.1);
+            max-width: 800px;
+            width: 90%;
+            overflow: visible;
+        }
+        #zwölf:hover {
+            transform: scale(1.05);
+            color: rgb(255, 255, 255);
+            cursor: pointer;
+            transition-duration: 1s;
+        }
+        #zwölf {
+            color: rgb(255, 255, 255);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            margin: 0  auto 1rem;
+            background: rgba(255, 1, 1, 0.185);
+            -webkit-backdrop-filter: blur(8px);
+            backdrop-filter: blur(8px);
+            border-radius: 25px;
+            padding: 20px 24px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 6px 18px rgba(255, 255, 255, 0.1);
+            max-width: 800px;
+            width: 90%;
+            overflow: visible;
+        }
+        #dreizehn:hover {
+            transform: scale(1.05);
+            color: rgb(255, 255, 255);
+            cursor: pointer;
+            transition-duration: 1s;
+        }
+        #dreizehn {
+            color: rgb(255, 255, 255);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            margin: 0  auto 1rem;
+            background: rgba(183, 1, 255, 0.185);
+            -webkit-backdrop-filter: blur(8px);
+            backdrop-filter: blur(8px);
+            border-radius: 25px;
+            padding: 20px 24px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 6px 18px rgba(255, 255, 255, 0.1);
+            max-width: 800px;
+            width: 90%;
+            overflow: visible;
+        }     
+        #vierzehn:hover {
+        transform: scale(1.05);
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+        transition-duration: 1s;
+        }
+        #vierzehn {
+            color: rgb(255, 255, 255);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            margin: 0  auto 1rem;
+            background: rgba(255, 1, 111, 0.338);
+            -webkit-backdrop-filter: blur(8px);
+            backdrop-filter: blur(8px);
+            border-radius: 25px;
+            padding: 20px 24px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 6px 18px rgba(255, 255, 255, 0.1);
+            max-width: 800px;
+            width: 90%;
+            overflow: visible;
+        }
+        #fünfzehn:hover {
+        transform: scale(1.05);
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+        transition-duration: 1s;
+        }
+        #fünfzehn {
+            color: rgb(255, 255, 255);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            margin: 0  auto 1rem;
+            background: rgba(14, 255, 1, 0.338);
+            -webkit-backdrop-filter: blur(8px);
+            backdrop-filter: blur(8px);
+            border-radius: 25px;
+            padding: 20px 24px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 6px 18px rgba(255, 255, 255, 0.1);
+            max-width: 800px;
+            width: 90%;
+            overflow: visible;
+        }
+        #sechzehn:hover {
+            transform: scale(1.05);
+            color: rgb(255, 255, 255);
+            cursor: pointer;
+            transition-duration: 1s;
+        }
+        #sechzehn {
+            color: rgb(255, 255, 255);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            margin: 0  auto 1rem;
+            background: rgba(1, 9, 255, 0.185);
+            -webkit-backdrop-filter: blur(8px);
+            backdrop-filter: blur(8px);
+            border-radius: 25px;
+            padding: 20px 24px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 6px 18px rgba(255, 255, 255, 0.1);
+            max-width: 800px;
+            width: 90%;
+            overflow: visible;
+        }
+        #siebzehn:hover {
+            transform: scale(1.05);
+            color: rgb(255, 255, 255);
+            cursor: pointer;
+            transition-duration: 1s;
+        }
+        #siebzehn {
+            color: rgb(255, 255, 255);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            margin: 0  auto 1rem;
+            background: rgba(144, 141, 90, 0.185);
+            -webkit-backdrop-filter: blur(8px);
+            backdrop-filter: blur(8px);
+            border-radius: 25px;
+            padding: 20px 24px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 6px 18px rgba(255, 255, 255, 0.1);
+            max-width: 800px;
+            width: 90%;
+            overflow: visible;
+        }
+        #achtzehn:hover {
+            transform: scale(1.05);
+            color: rgb(255, 255, 255);
+            cursor: pointer;
+            transition-duration: 1s;
+        }
+        #achtzehn {
+            color: rgb(255, 255, 255);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            margin: 0  auto 1rem;
+            background: rgba(255, 1, 255, 0.185);
+            -webkit-backdrop-filter: blur(8px);
+            backdrop-filter: blur(8px);
+            border-radius: 25px;
+            padding: 20px 24px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 6px 18px rgba(255, 255, 255, 0.1);
+            max-width: 800px;
+            width: 90%;
+            overflow: visible;
+        }
+        #neunzehn:hover {
+            transform: scale(1.05);
+            color: white;
+            cursor: pointer;
+            transition-duration: 1s;
+        }
+        #neunzehn {
+            color: white;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            margin: 0  auto 1rem;
+            background: rgba(255, 251, 15, 0.185);
+            -webkit-backdrop-filter: blur(8px);
+            backdrop-filter: blur(8px);
+            border-radius: 25px;
+            padding: 20px 24px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 6px 18px rgba(255, 255, 255, 0.1);
+            max-width: 800px;
+            width: 90%;
+            overflow: visible;
+        }
+        #zwanzig:hover {
+            transform: scale(1.05);
+            color: rgb(255, 255, 255);
+            cursor: pointer;
+            transition-duration: 1s;
+        }
+        #zwanzig {
+            color: rgb(255, 255, 255);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            margin: 0  auto 1rem;
+            background: rgba(42, 190, 153, 0.185);
+            -webkit-backdrop-filter: blur(8px);
+            backdrop-filter: blur(8px);
+            border-radius: 25px;
+            padding: 20px 24px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 6px 18px rgba(255, 255, 255, 0.1);
+            max-width: 800px;
+            width: 90%;
+            overflow: visible;
+        }
+        #einundzwanzig:hover {
+            transform: scale(1.05);
+            color: rgb(255, 255, 255);
+            cursor: pointer;
+            transition-duration: 1s;
+        }
+        #einundzwanzig {
+            color: rgb(255, 255, 255);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            margin: 0  auto 1rem;
+            background: rgba(255, 1, 1, 0.185);
+            -webkit-backdrop-filter: blur(8px);
+            backdrop-filter: blur(8px);
+            border-radius: 25px;
+            padding: 20px 24px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 6px 18px rgba(255, 255, 255, 0.1);
+            max-width: 800px;
+            width: 90%;
+            overflow: visible;
+        }
+        #zweiundzwanzig:hover {
+            transform: scale(1.05);
+            color: rgb(255, 255, 255);
+            cursor: pointer;
+            transition-duration: 1s;
+        }
+        #zweiundzwanzig {
+            color: rgb(255, 255, 255);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            margin: 0  auto 1rem;
+            background: rgba(125, 73, 145, 0.185);
+            -webkit-backdrop-filter: blur(8px);
+            backdrop-filter: blur(8px);
+            border-radius: 25px;
+            padding: 20px 24px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 6px 18px rgba(255, 255, 255, 0.1);
+            max-width: 800px;
+            width: 90%;
+            overflow: visible;
+        }     
+        #dreiundzwanzig:hover {
+        transform: scale(1.05);
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+        transition-duration: 1s;
+        }
+        #dreiundzwanzig {
+            color: rgb(255, 255, 255);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            margin: 0  auto 1rem;
+            background: rgba(107, 1, 255, 0.338);
+            -webkit-backdrop-filter: blur(8px);
+            backdrop-filter: blur(8px);
+            border-radius: 25px;
+            padding: 20px 24px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 6px 18px rgba(255, 255, 255, 0.1);
+            max-width: 800px;
+            width: 90%;
+            overflow: visible;
+        }
+        #vierundzwanzig:hover {
+        transform: scale(1.05);
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+        transition-duration: 1s;
+        }
+        #vierundzwanzig {
+            color: rgb(255, 255, 255);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            margin: 0  auto 1rem;
+            background: rgba(14, 255, 1, 0.338);
+            -webkit-backdrop-filter: blur(8px);
+            backdrop-filter: blur(8px);
+            border-radius: 25px;
+            padding: 20px 24px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 6px 18px rgba(255, 255, 255, 0.1);
+            max-width: 800px;
+            width: 90%;
+            overflow: visible;
+        }
+        #fünfundzwanzig:hover {
+            transform: scale(1.05);
+            color: rgb(255, 255, 255);
+            cursor: pointer;
+            transition-duration: 1s;
+        }
+        #fünfundzwanzig {
+            color: rgb(255, 255, 255);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            margin: 0  auto 1rem;
+            background: rgba(1, 9, 255, 0.185);
+            -webkit-backdrop-filter: blur(8px);
+            backdrop-filter: blur(8px);
+            border-radius: 25px;
+            padding: 20px 24px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 6px 18px rgba(255, 255, 255, 0.1);
+            max-width: 800px;
+            width: 90%;
+            overflow: visible;
+        }
+        #sechundzwanzig:hover {
+            transform: scale(1.05);
+            color: rgb(255, 255, 255);
+            cursor: pointer;
+            transition-duration: 1s;
+        }
+        #sechundzwanzig {
+            color: rgb(255, 255, 255);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            margin: 0  auto 1rem;
+            background: rgba(144, 141, 90, 0.185);
+            -webkit-backdrop-filter: blur(8px);
+            backdrop-filter: blur(8px);
+            border-radius: 25px;
+            padding: 20px 24px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 6px 18px rgba(255, 255, 255, 0.1);
+            max-width: 800px;
+            width: 90%;
+            overflow: visible;
+        }
+        #siebenundzwanzig:hover {
+            transform: scale(1.05);
+            color: rgb(255, 255, 255);
+            cursor: pointer;
+            transition-duration: 1s;
+        }
+        #siebenundzwanzig {
+            color: rgb(255, 255, 255);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            margin: 0  auto 1rem;
+            background: rgba(255, 1, 255, 0.185);
+            -webkit-backdrop-filter: blur(8px);
+            backdrop-filter: blur(8px);
+            border-radius: 25px;
+            padding: 20px 24px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 6px 18px rgba(255, 255, 255, 0.1);
+            max-width: 800px;
+            width: 90%;
+            overflow: visible;
+        }
+        #achtundzwanzig:hover {
+            transform: scale(1.05);
+            color: white;
+            cursor: pointer;
+            transition-duration: 1s;
+        }
+        #achtundzwanzig {
+            color: white;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            margin: 0  auto 1rem;
+            background: rgba(255, 251, 15, 0.185);
+            -webkit-backdrop-filter: blur(8px);
+            backdrop-filter: blur(8px);
+            border-radius: 25px;
+            padding: 20px 24px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 6px 18px rgba(255, 255, 255, 0.1);
+            max-width: 800px;
+            width: 90%;
+            overflow: visible;
+        }
+        #neunundzwanzig:hover {
+            transform: scale(1.05);
+            color: rgb(255, 255, 255);
+            cursor: pointer;
+            transition-duration: 1s;
+        }
+        #neunundzwanzig {
+            color: rgb(255, 255, 255);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            margin: 0  auto 1rem;
+            background: rgba(42, 190, 153, 0.185);
+            -webkit-backdrop-filter: blur(8px);
+            backdrop-filter: blur(8px);
+            border-radius: 25px;
+            padding: 20px 24px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 6px 18px rgba(255, 255, 255, 0.1);
+            max-width: 800px;
+            width: 90%;
+            overflow: visible;
+        }
+        #dreisig:hover {
+            transform: scale(1.05);
+            color: rgb(255, 255, 255);
+            cursor: pointer;
+            transition-duration: 1s;
+        }
+        #dreissig {
+            color: rgb(255, 255, 255);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            margin: 0  auto 1rem;
+            background: rgba(255, 1, 1, 0.185);
+            -webkit-backdrop-filter: blur(8px);
+            backdrop-filter: blur(8px);
+            border-radius: 25px;
+            padding: 20px 24px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 6px 18px rgba(255, 255, 255, 0.1);
+            max-width: 800px;
+            width: 90%;
+            overflow: visible;
+        }
+        #einunddreissig:hover {
+            transform: scale(1.05);
+            color: rgb(255, 255, 255);
+            cursor: pointer;
+            transition-duration: 1s;
+        }
+        #einunddreissig {
+            color: rgb(255, 255, 255);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            margin: 0  auto 1rem;
+            background: rgba(183, 1, 255, 0.185);
+            -webkit-backdrop-filter: blur(8px);
+            backdrop-filter: blur(8px);
+            border-radius: 25px;
+            padding: 20px 24px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 6px 18px rgba(255, 255, 255, 0.1);
+            max-width: 800px;
+            width: 90%;
+            overflow: visible;
+        }     
+        #zweiunddreissig:hover {
+        transform: scale(1.05);
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+        transition-duration: 1s;
+        }
+        #zweiunddreissig {
+            color: rgb(255, 255, 255);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            margin: 0  auto 1rem;
+            background: rgba(255, 1, 111, 0.338);
+            -webkit-backdrop-filter: blur(8px);
+            backdrop-filter: blur(8px);
+            border-radius: 25px;
+            padding: 20px 24px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 6px 18px rgba(255, 255, 255, 0.1);
+            max-width: 800px;
+            width: 90%;
+            overflow: visible;
+        }
+        #credits {
+            color: rgba(255, 255, 255, 0.153);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            margin: 0  auto 1rem;
+            width: 90%;
+            max-width: 800px;
+            overflow: visible;
+        }
+        #credits a {
+            color: rgba(255, 255, 255, 0.153);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        #credits a:hover {
+            color: rgba(255, 255, 255, 0.5);
+            transition-duration: 1s;
+        }
+        body {
+            background-color: rgb(36, 36, 36);
+            color: white;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 15px;
+        }

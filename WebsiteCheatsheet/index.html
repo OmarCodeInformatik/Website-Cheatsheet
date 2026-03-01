@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Cheatsheet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <br>
+    <div class="header-container">
+        <h1>Website Cheatsheet</h1>
+        <br>
+        <img src="HTML-CSS-JavaScript.png" alt="Website Logo" width="200">
+    </div>
+    <br>
+    <br>
+    <br>
+    <div id ="inhalt">
+    <ul>
+        <li id="pointColor"><a href="#title"><p id="InhaltTitel">HTML</p></a>
+        <a href="#eins"><p>Grundstruktur</p></a>
+        <a href="#zwei"><p>Inhaltsstruktur</p></a>
+        <a href="#drei"><p>Text & Formatierung</p></a>
+        <a href="#vier"><p>Listen</p></a>
+        <a href="#fünf"><p>Medien &amp; Einbettungen</p></a>
+        <a href="#sechs"><p>Tabellen</p></a>
+        <a href="#sieben"><p>Formulare &amp; Eingaben</p></a>
+        <a href="#acht"><p>Interaktive & Sonstige</p></a>
+        <li id="pointColor2"><a href="#title"><p id="InhaltTitel2">CSS</p></a>
+        <a href="#neun"><p>Grundlagen</p></a>
+        <a href="#zehn"><p>Text & Schrift</p></a>
+        <a href="#elf"><p>Box-Modell</p></a>
+        <a href="#zwölf"><p>Layout & Positionierung</p></a>
+        <a href="#dreizehn"><p>Farben & Effekte</p></a>
+        <a href="#vierzehn"><p>Listen & Text</p></a>
+        <a href="#fünfzehn"><p>Tabellen</p></a></li>
+        <a href="#sechzehn"><p>Hintergrund & Gradients</p></a></li>
+        <a href="#siebzehn"><p>Pseudo-Klassen & Pseudo-Elemente</p></a></li>
+        <li id="pointColor3"><a href="#title"><p id="InhaltTitel3">JavaScript</p></a></li>
+        <a href="#achtzehn"><p>Grundlagen</p></a></li>
+        <a href="#neunzehn"><p>DatenTypen</p></a></li>
+        <a href="#zwanzig"><p>Operatoren</p></a></li>
+        <a href="#einundzwanzig"><p>Bedingungen</p></a></li>
+        <a href="#zweiundzwanzig"><p>Schleifen</p></a></li>
+        <a href="#dreiundzwanzig"><p>Funktionen</p></a></li>
+        <a href="#vierundzwanzig"><p>Arrays</p></a></li>
+        <a href="#fünfundzwanzig"><p>String-Funktionen</p></a></li>
+        <a href="#sechundzwanzig"><p>Objekte & Klassen</p></a></li>
+        <a href="#siebenundzwanzig"><p>DOM & Events</p></a></li>
+        <a href="#achtundzwanzig"><p>Browser & Web-Apis</p></a></li>
+        <a href="#neunundzwanzig"><p>Fehlerbehandlung</p></a></li>
+        <a href="#dreißig"><p>Fehlerbehandlung</p></a></li>
+        <a href="#einunddreißig"><p>Module</p></a></li>
+        <a href="#zweiunddreißig"><p>JSON & Speicher</p></a></li>
+    </ul>
+    </div>
+    <br>
+    <br>
+    <br>
+    <h1 id="title">HTML</h1>
+    <br>
+    <div id="eins">
+        <h2>Grundstruktur</h2>
+        <ul>
+        <li>
+            <code>&lt;!DOCTYPE html&gt;</code>: Deklariert den Dokumenttyp und die HTML-Version.
+        </li>
+        <br>
+        <li>
+            <code>&lt;html&gt;</code>: Das Wurzelelement, das den gesamten HTML-Code umschließt.
+        </li>
+        <br>
+        <li>
+            <code>&lt;head&gt;</code>: Enthält Metadaten, Skripte, Links zu CSS-Dateien und den Titel der Seite.
+            <ul>
+                <br>
+                <li>
+                    <code>&lt;meta charset="UTF-8"&gt;</code>: Legt die Zeichenkodierung der Seite fest.
+                </li>
+                <br>
+                <li>
+                    <code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code>: Sorgt für eine responsive Gestaltung auf mobilen Geräten.
+                </li>
+                <br>
+                <li>
+                    <code>&lt;title&gt;</code>: Definiert den Titel der Webseite, der im Browser-Tab angezeigt wird.
+                </li>
+                <br>
+                <li>
+                    <code>&lt;link rel="stylesheet" href="style.css"&gt;</code>: Verknüpft eine externe CSS-Datei für die Gestaltung der Webseite.
+                </li>
+            </ul>
+        <br>
+        <li>
+            <code>&lt;body&gt;</code>: Enthält den sichtbaren Inhalt der Webseite.
+        </li>
+    </ul>
+    </div>
+    <br>
+    <div id="zwei">
+    <h2>Inhaltsstruktur</h2>
+    <br>
+    <ul>
+        <li>
+            <code>&lt;header&gt;</code>: Definiert den Kopfbereich der Seite.
+        </li>
+        <br>
+        <li>
+            <code>&lt;main&gt;</code>: Enthält den Hauptinhalt der Seite.
+        </li>
+        <br>
+        <li>
+            <code>&lt;footer&gt;</code>: Definiert den Fußbereich der Seite.
+        </li>
+        <br>
+        <li>
+            <code>&lt;section&gt;</code>: Definiert einen Abschnitt innerhalb des Hauptinhalts.
+        </li>
+        <br>
+        <li>
+            <code>&lt;article&gt;</code>: Definiert einen eigenständigen Artikel oder Beitrag.
+        </li>
+        <br>
+        <li>
+            <code>&lt;nav&gt;</code>: Definiert eine Navigationsleiste.
+        </li>
+        <br>
+        <li>
+            <code>&lt;aside&gt;</code>: Definiert Inhalte, die indirekt mit dem Hauptinhalt verbunden sind, wie z.B. Seitenleisten.
+        </li>
+        <br>
+        <li>
+            <code>&lt;div&gt;</code>: Ein generisches Container-Element, das zur Gruppierung von Inhalten verwendet wird.
+        </li>
+        <br>
+        <li>
+            <code>&lt;span&gt;</code>: Ein generisches Inline-Element, das zur Gruppierung von Text oder anderen Inline-Elementen verwendet wird.
+        </li>
+    </ul>
+    </div>
+    <br>
+    <div id="drei">
+    <h2>Text & Formatierung</h2>
+    <br>
+    <ul>
+        <li><code>&lt;h1&gt; bis &lt;h6&gt;</code>: Überschriften</li>
+        <br>
+        <li><code>&lt;p&gt;</code>: Absatz</li>
+        <br>
+        <li><code>&lt;strong&gt;</code>: Wichtig / fett</li>
+        <br>
+        <li><code>&lt;b&gt;</code>: Fett (ohne semantische Bedeutung)</li>
+        <br>
+        <li><code>&lt;em&gt;</code>: Betonung</li>
+        <br>
+        <li><code>&lt;i&gt;</code>: Kursiv (ohne semantische Bedeutung)</li>
+        <br>
+        <li><code>&lt;mark&gt;</code>: Markierter Text</li>
+        <br>
+        <li><code>&lt;small&gt;</code>: Kleiner Text</li>
+        <br>
+        <li><code>&lt;del&gt;</code>: Durchgestrichen</li>
+        <br>
+        <li><code>&lt;ins&gt;</code>: Eingefügter Text</li>
+        <br>
+        <li><code>&lt;sub&gt;</code>: Tiefgestellt</li>
+        <br>
+        <li><code>&lt;sup&gt;</code>: Hochgestellt</li>
+        <br>
+        <li><code>&lt;q&gt;</code>: Kurzes Zitat</li>
+        <br>
+        <li><code>&lt;blockquote&gt;</code>: Langes Zitat</li>
+        <br>
+        <li><code>&lt;br&gt;</code>: Zeilenumbruch</li>
+        <br>
+        <li><code>&lt;hr&gt;</code>: Trennlinie</li>
+        <br>
+        <li><code>&lt;pre&gt;</code>: Vorformatierter Text</li>
+        <br>
+        <li><code>&lt;code&gt;</code>: Code-Darstellung</li>
+        <br>
+        <li><code>&lt;kbd&gt;</code>: Tastatureingaben</li>
+        <br>
+        <li><code>&lt;cite&gt;</code>: Quellenangabe</li>
+        <br>
+        <li><code>&lt;abbr&gt;</code>: Abkürzung</li>
+        <br>
+        <li><code>&lt;time&gt;</code>: Zeit / Datum</li>
+        <br>
+        <li><code>&lt;address&gt;</code>: Kontaktinformationen</li>
+    </ul>
+    </div>
+    <br>
+    <div id="vier">
+    <h2>Listen</h2>
+    <br>
+    <ul>
+        <li><code>&lt;ul&gt;</code>: Ungeordnete Liste</li>
+        <br>
+        <li><code>&lt;ol&gt;</code>: Geordnete Liste</li>
+        <br>
+        <li><code>&lt;li&gt;</code>: Listeneintrag</li>
+        <br>
+        <li><code>&lt;dl&gt;</code>: Definitionsliste</li>
+        <br>
+        <li><code>&lt;dt&gt;</code>: Begriff</li>
+        <br>
+        <li><code>&lt;dd&gt;</code>: Beschreibung</li>
+    </ul>
+    </div>
+    <br>
+    <div id="fünf">
+    <h2>Medien &amp; Einbettungen</h2>
+    <br>
+    <ul>
+        <li><code>&lt;img&gt;</code>: Bild</li>
+        <br>
+        <li><code>&lt;figure&gt;</code>: Medien-Container</li>
+        <br>
+        <li><code>&lt;figcaption&gt;</code>: Bildunterschrift</li>
+        <br>
+        <li><code>&lt;audio&gt;</code>: Audio</li>
+        <br>
+        <li><code>&lt;video&gt;</code>: Video</li>
+        <br>
+        <li><code>&lt;source&gt;</code>: Medienquelle</li>
+        <br>
+        <li><code>&lt;track&gt;</code>: Untertitel</li>
+        <br>
+        <li><code>&lt;iframe&gt;</code>: Externe Inhalte</li>
+        <br>
+        <li><code>&lt;canvas&gt;</code>: Zeichenfläche</li>
+        <br>
+        <li><code>&lt;svg&gt;</code>: Vektorgrafik</li>
+        <br>
+        <li><code>&lt;picture&gt;</code>: Responsive Bilder</li>
+    </ul>
+    </div>
+    <br>
+    <div id="sechs">
+    <h2>Tabellen</h2>
+    <br>
+    <ul>
+        <li><code>&lt;table&gt;</code>: Tabelle</li>
+        <br>
+        <li><code>&lt;caption&gt;</code>: Tabellenüberschrift</li>
+        <br>
+        <li><code>&lt;thead&gt;</code>: Tabellenkopf</li>
+        <br>
+        <li><code>&lt;tbody&gt;</code>: Tabellenkörper</li>
+        <br>
+        <li><code>&lt;tfoot&gt;</code>: Tabellenfuß</li>
+        <br>
+        <li><code>&lt;tr&gt;</code>: Tabellenzeile</li>
+        <br>
+        <li><code>&lt;th&gt;</code>: Tabellenkopf-Zelle</li>
+        <br>
+        <li><code>&lt;td&gt;</code>: Tabellenzelle</li>
+        <br>
+        <li><code>&lt;colgroup&gt;</code>: Spaltengruppe</li>
+        <br>
+        <li><code>&lt;col&gt;</code>: Spalte</li>
+    </ul>
+    </div>
+    <br>
+    <div id="sieben">
+    <h2>Formulare &amp; Eingaben</h2>
+    <br>
+    <ul>
+        <li><code>&lt;form&gt;</code>: Formular</li>
+        <br>
+        <li><code>&lt;input&gt;</code>: Eingabefeld</li>
+        <br>
+        <li><code>&lt;textarea&gt;</code>: Textfeld</li>
+        <br>
+        <li><code>&lt;label&gt;</code>: Beschriftung</li>
+        <br>
+        <li><code>&lt;select&gt;</code>: Auswahlfeld</li>
+        <br>
+        <li><code>&lt;option&gt;</code>: Auswahloption</li>
+        <br>
+        <li><code>&lt;optgroup&gt;</code>: Optionsgruppe</li>
+        <br>
+        <li><code>&lt;button&gt;</code>: Button</li>
+        <br>
+        <li><code>&lt;fieldset&gt;</code>: Gruppierung</li>
+        <br>
+        <li><code>&lt;legend&gt;</code>: Gruppenüberschrift</li>
+        <br>
+        <li><code>&lt;datalist&gt;</code>: Vorschlagsliste</li>
+        <br>
+        <li><code>&lt;output&gt;</code>: Ausgabe</li>
+        <br>
+        <li><code>&lt;progress&gt;</code>: Fortschrittsanzeige</li>
+        <br>
+        <li><code>&lt;meter&gt;</code>: Messanzeige</li>
+    </ul>
+    </div>
+    <br>
+    <div id="acht">
+    <h2>Interaktive & Sonstige</h2>
+    <br>
+    <ul>
+        <li><code>&lt;details&gt;</code>: Aufklappbarer Bereich</li>
+        <br>
+        <li><code>&lt;summary&gt;</code>: Titel für Details</li>
+        <br>
+        <li><code>&lt;dialog&gt;</code>: Dialogfenster</li>
+        <br>
+        <li><code>&lt;template&gt;</code>: Vorlage</li>
+        <br>
+        <li><code>&lt;slot&gt;</code>: Web Components Slot</li>
+    </ul>
+    </div>
+    <br>
+    <h1 id="title">CSS</h1>
+    <br>
+    <div id="neun">
+        <h2>Grundlagen</h2>
+        <br>
+        <ul>
+            <li>color: Textfarbe</li>
+            <br>
+            <li>background-color: Hintergrundfarbe</li>
+            <br>
+            <li>background-image: Hintergrundbild</li>
+            <br>
+            <li>background-size: Größe des Hintergrunds</li>
+            <br>
+            <li>background-position: Position des Hintergrunds</li>
+            <br>
+            <li>background-repeat: Wiederholung des Hintergrunds</li>
+            <br>
+            <li>opacity: Transparenz</li>
+        </ul>
+    </div>
+    <br>
+    <div id="zehn">
+        <h2>Text & Schrift</h2>
+        <br>
+        <ul>
+            <li>font-family: Schriftart</li>
+            <br>
+            <li>font-size: Schriftgröße</li>
+            <br>
+            <li>font-weight: Schriftstärke</li>
+            <br>
+            <li>font-style: Schriftstil (kursiv, normal)</li>
+            <br>
+            <li>text-align: Textausrichtung</li>
+            <br>
+            <li>text-decoration: Textdekoration</li>
+            <br>
+            <li>text-transform: Texttransformation (Groß-/Kleinschreibung)</li>
+            <br>
+            <li>line-height: Zeilenhöhe</li>
+            <br>
+            <li>letter-spacing: Buchstabenabstand</li>
+            <br>
+            <li>word-spacing: Wortabstand</li>
+            <br>
+            <li>text-shadow: Textschatten</li>
+
+        </ul>
+    </div>
+    <br>
+    <div id="elf">
+        <h2>Box-Modell</h2>
+        <br>
+        <ul>
+            <li>width: Breite</li>
+            <br>
+            <li>height: Höhe</li>
+            <br>
+            <li>margin: Außenabstand</li>
+            <br>
+            <li>margin-top, margin-right, margin-bottom, margin-left: Seitenweiser Außenabstand</li>
+            <li>padding: Innenabstand</li>
+            <br>
+            <li>padding-top, padding-right, padding-bottom, padding-left: Seitenweiser Innenabstand</li>
+            <br>
+            <li>border: Rahmen</li>
+            <br>
+            <li>border-width: Rahmenbreite</li>
+            <br>
+            <li>border-style: Rahmenstil (solid, dashed, dotted)</li>
+            <br>
+            <li>border-color: Rahmenfarbe</li>
+            <br>
+            <li>box-sizing: Box-Modell (content-box, border-box)</li>
+            <br>
+            <li>border-radius: Eckenrundung</li>
+            <br>
+            <li>box-shadow: Box-Schatten</li>
+        </ul>
+    </div>
+    <br>
+    <div id="zwölf">
+        <h2>Layout & Positionierung</h2>
+        <br>
+        <ul>
+            <li>display: Anzeigetyp (block, inline, inline-block, none)</li>
+            <br>
+            <li>position: Positionierung (static, relative, absolute, fixed)</li>
+            <br>
+            <li>top, right, bottom, left: Positionierung in Pixeln</li>
+            <br>
+            <li>float: Links/rechts schweben</li>
+            <br>
+            <li>clear: Klare Floats</li>
+            <br>
+            <li>z-index: Stapelreihenfolge</li>
+            <br>
+            <li>overflow: Überlauf (visible, hidden, scroll, auto)</li>
+            <br>
+            <li>flex-direction: Flex-Richtung</li>
+            <br>
+            <li>justify-content: Flex-Ausrichtung</li>
+            <br>
+            <li>align-items: Flex-Elemente vertikal ausrichten</li>
+            <br>
+            <li>align-content: Flex-Zeilenausrichtung</li>
+            <br>
+            <li>grid-template-columns: Grid-Spalten</li>
+            <br>
+            <li>grid-template-rows: Grid-Zeilen</li>
+            <br>
+            <li>gap: Abstand</li>
+            <br>
+            <li>grid-area: Grid-Bereich</li>
+            <br>
+            <li>grid-column: Spaltenposition</li>
+            <br>
+            <li>grid-row: Zeilenposition</li>
+        </ul>
+    </div>
+    <br>
+    <div id="dreizehn">
+        <h2>Farben & Effekte</h2>
+        <br>
+        <ul>
+            <li>opacity: Transparenz</li>
+            <br>
+            <li>filter: Filtereffekte (blur, grayscale, brightness)</li>
+            <br>
+            <li>transition: Übergangseffekte</li>
+            <br>
+            <li>transform: Transformationen (rotate, scale, translate)</li>
+            <br>
+            <li>animation: CSS-Animation</li>
+        </ul>
+    </div>
+    <br>
+    <div id="vierzehn">
+        <h2>Listen & Text</h2>
+        <br>
+        <ul>
+            <li>list-style-type: Aufzählungstyp (disc, circle, square, decimal)</li>
+            <br>
+            <li>list-style-position: Aufzählungsposition (inside, outside)</li>
+            <br>
+            <li>list-style-image: Aufzählungsbild</li>
+            <br>
+            <li>white-space: Leerraumverhalten (normal, nowrap, pre, pre-line, pre-wrap)</li>
+            <br>
+            <li>word-break: Worttrennung (normal, break-all, keep-all)</li>
+        </ul>
+    </div>
+    <br>
+    <div id="fünfzehn">
+        <h2>Tabellen</h2>
+        <br>
+        <ul>
+            <li>border-collapse: Rahmen der Tabelle zusammenführen</li>
+            <br>
+            <li>border-spacing: Abstand zwischen Zellen</li>
+            <br>
+            <li>table-layout: Tabellenlayout (auto, fixed)</li>
+            <br>
+            <li>caption-side: Position der Tabellenüberschrift (top, bottom)</li>
+        </ul>
+    </div>
+    <br>
+    <div id="sechzehn">
+        <h2>Hintergrund & Gradients</h2>
+        <br>
+        <ul>
+            <li>background-clip: Hintergrund-Bereich</li>
+            <br>
+            <li>background-image: Hintergrundbild</li>
+            <br>
+            <li>background-attachment: Hintergrundbefestigung</li>
+            <br>
+            <li>background-origin: Hintergrundursprung</li>
+            <br>
+            <li>linear-gradient: Farbverlauf linear</li>
+            <br>
+            <li>radial-gradient: Farbverlauf radial</li>
+            <br>
+            <li>conic-gradient: Farbverlauf konisch</li>
+        </ul>
+    </div>
+    <br>
+    <div id="siebzehn">
+        <h2>Pseudo-Klassen & Pseudo-Elemente</h2>
+        <br>
+        <ul>
+            <li>:hover – Bei Mauszeiger</li>
+            <br>
+            <li>:active – Bei Aktivierung</li>
+            <br>
+            <li>:focus – Bei Fokus</li>
+            <br>
+            <li>:nth-child(n) – Jedes n-te Kind</li>
+            <br>
+            <li>:first-child – Erstes Kind</li>
+            <br>
+            <li>:last-child – Letztes Kind</li>
+            <br>
+            <li>::before – Vor dem Inhalt</li>
+            <br>
+            <li>::after – Nach dem Inhalt</li>
+        </ul>
+    </div>
+    <br>
+    <h1 id="title">JavaScript</h1>
+    <br>
+    <div id="achtzehn">
+        <h2>Grundlagen</h2>
+        <br>
+        <ul>
+            <li>let: Variable mit änderbarem Wert</li>
+            <br>
+            <li>const: Konstante (nicht neu zuweisen)</li>
+            <br>
+            <li>var: Veraltete Variable (funktionaler Scope)</li>
+            <br>
+            <li>typeof: Typ eines Werts abfragen</li>
+            <br>
+            <li>undefined: Nicht definierter Wert</li>
+            <br>
+            <li>null: Absichtlich leerer Wert</li>
+            <br>
+            <li>true / false: Wahrheitswerte</li>
+            <br>
+            <li>console.log(): Ausgabe in der Konsole</li>
+            <br>
+            <li>prompt(): Benutzereingabe abfragen</li>
+            <br>
+            <li>alert(): Meldungsfenster anzeigen</li>
+        </ul>
+    </div>
+    <br>
+    <div id="neunzehn">
+        <h2>DatenTypen</h2>
+        <br>
+        <ul>
+            <li>String: Text (z.B. "Hallo")</li>
+            <br>
+            <li>Number: Zahl (z.B. 42, 3.14)</li>
+            <br>
+            <li>Boolean: Wahrheitswert (true / false)</li>
+            <br>
+            <li>BigInt: Sehr große Ganzzahlen</li>
+            <br>
+            <li>Array: Liste von Werten (z.B. [1, 2, 3])</li>
+            <br>
+            <li>Symbol: Eindeutiger Wert</li>
+            <br>
+            <li>Object: Objekt</li>
+            <br>
+            <li>Map: Schlüssel-Wert-Sammlung</li>
+            <br>
+            <li>Set: Sammlung von eindeutigen Werten</li>
+        </ul>
+    </div>
+    <br>
+    <div id="zwanzig">
+        <h2>Operatoren</h2>
+        <br>
+        <ul>
+            <li>+ : Addition / Verkettung</li>
+            <br>
+            <li>- : Subtraktion</li>
+            <br>
+            <li>* : Multiplikation</li>
+            <br>
+            <li>/ : Division</li>
+            <br>
+            <li>% : Modulo (Rest)</li>
+            <br>
+            <li>** : Potenzierung</li>
+            <br>
+            <li>= : Zuweisung</li>
+            <br>
+            <li>== : Gleichheit (lose)</li>
+            <br>
+            <li>=== : Gleichheit (streng)</li>
+            <br>
+            <li>!= : Ungleichheit (lose)</li>
+            <br>
+            <li>!== : Ungleichheit (streng)</li>
+            <br>
+            <li>&& : Logisches UND</li>
+            <br>
+            <li>|| : Logisches ODER</li>
+            <br>
+            <li>! : Logisches NICHT</li>
+            <br>
+            <li>++ : Inkrement</li>
+            <br>
+            <li>-- : Dekrement</li>
+            <br>
+            <li>> < >= <= : Vergleichsoperatoren</li>
+        </ul>
+    </div>
+    <br>
+    <div id="einundzwanzig">
+        <h2>Bedingungen</h2>
+        <br>
+        <ul>
+            <li>if: Bedingte Anweisung</li>
+            <br>
+            <li>else: Alternative Anweisung</li>
+            <br>
+            <li>else if: Weitere Bedingung</li>
+            <br>
+            <li>switch: Mehrfachauswahl</li>
+            <br>
+            <li>case: Fall in switch-Anweisung</li>
+            <br>
+            <li>default: Standardfall in switch-Anweisung</li>
+            <br>
+            <li>? : – Kurzform für if/else</li>
+        </ul>
+    </div>
+    <br>
+    <div id="zweiundzwanzig">
+        <h2>Schleifen</h2>
+        <br>
+        <ul>
+            <li>for: Zählschleife</li>
+            <br>
+            <li>while: Bedingte Schleife</li>
+            <br>
+            <li>do...while: Bedingte Schleife mit mindestens einem Durchlauf</li>
+            <br>
+            <li>for...in: Iteration über Objekt-Eigenschaften</li>
+            <br>
+            <li>for...of: Iteration über iterable Objekte</li>
+            <br>
+            <li>break: Schleife abbrechen</li>
+            <br>
+            <li>continue: Aktuellen Schleifendurchlauf überspringen</li>
+        </ul>
+    </div>
+    <br>
+    <div id="dreiundzwanzig">
+        <h2>Funktionen</h2>
+        <br>
+        <ul>
+            <li>function: Funktion deklarieren</li>
+            <br>
+            <li>return: Wert zurückgeben</li>
+            <br>
+            <li>=> : Pfeilfunktion</li>
+            <br>
+            <li>arrow function: Kurze Funktionssyntax</li>
+            <br>
+            <li>parameters: Funktionsparameter</li>
+            <br>
+            <li>arguments: Alle übergebenen Argumente</li>
+            <br>
+            <li>...rest: Unbegrenzte Anzahl von Parametern</li>
+            <br>
+            <li>default: Standardwert für Parameter</li>
+            <br>
+            <li>callback: Funktion als Argument</li>
+            <br>
+            <li>higher-order function: Funktion, die andere Funktionen verwendet</li>
+            <br>
+            <li>await: Auf Promise warten</li>
+            <br>
+            <li>async: Asynchrone Funktion deklarieren</li>
+        </ul>
+    </div>
+    <br>
+    <div id="vierundzwanzig">
+        <h2>Arrays</h2>
+        <br>
+        <ul>
+            <li>push(): Element ans Ende hinzufügen</li>
+            <br>
+            <li>pop(): Letztes Element entfernen</li>
+            <br>
+            <li>shift(): Erstes Element entfernen</li>
+            <br>
+            <li>unshift(): Element an den Anfang hinzufügen</li>
+            <br>
+            <li>length: Anzahl der Elemente</li>
+            <br>
+            <li>indexOf(): Index eines Elements finden</li>
+            <br>
+            <li>slice(): Teilarray erstellen</li>
+            <br>
+            <li>splice(): Elemente hinzufügen/entfernen</li>
+            <br>
+            <li>forEach(): Funktion für jedes Element ausführen</li>
+            <br>
+            <li>map(): Neues Array mit Ergebnissen einer Funktion erstellen</li>
+            <br>
+            <li>filter(): Neues Array mit Elementen, die eine Bedingung erfüllen</li>
+            <br>
+            <li>reduce(): Einzelnen Wert aus Array berechnen</li>
+            <br>
+            <li>find(): Erstes Element finden, das eine Bedingung erfüllt</li>
+            <br>
+            <li>includes(): Überprüfen, ob ein Element im Array enthalten ist</li>
+            <br>
+            <li>sort(): Array sortieren</li>
+            <br>
+            <li>reverse(): Array umkehren</li>
+            <br>
+            <li>sort(): Sortieren</li>
+        </ul>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="fünfundzwanzig">
+        <h2>String-Funktionen</h2>
+        <br>
+        <ul>
+            <li>length: Länge des Strings</li>
+            <br>
+            <li>toUpperCase(): In Großbuchstaben umwandeln</li>
+            <br>
+            <li>toLowerCase(): In Kleinbuchstaben umwandeln</li>
+            <br>
+            <li>indexOf(): Index eines Teilstrings finden</li>
+            <br>
+            <li>slice(): Teilstring erstellen</li>
+            <br>
+            <li>replace(): Teilstring ersetzen</li>
+            <br>
+            <li>split(): String in Array aufteilen</li>
+            <br>
+            <li>trim(): Leerzeichen entfernen</li>
+            <br>
+            <li>includes(): Überprüfen, ob ein Teilstring enthalten ist</li>
+            <br>
+            <li>startsWith(): Überprüfen, ob String mit einem Teilstring beginnt</li>
+            <br>
+            <li>endsWith(): Überprüfen, ob String mit einem Teilstring endet</li>
+            <br>
+            <li>charAt(): Zeichen an bestimmter Position</li>
+            <br>
+            <li>charCodeAt(): Unicode-Wert des Zeichens an bestimmter Position</li>
+            <br>
+            <li>concat(): Strings zusammenfügen</li>
+            <br>
+            <li>repeat(): String mehrfach wiederholen</li>
+            <br>
+            <li>padStart(): String auf bestimmte Länge auffüllen (am Anfang)</li>
+            <br>
+            <li>padEnd(): String auf bestimmte Länge auffüllen (am Ende)</li>
+            <br>
+            <li>match(): Übereinstimmungen mit regulärem Ausdruck finden</li>
+            <br>
+            <li>replaceAll(): Alle Vorkommen eines Teilstrings ersetzen</li>
+            <br>
+            <li>normalize(): Unicode-Normalisierung</li>
+            <br>
+            <li>localeCompare(): Vergleich von Strings unter Berücksichtigung der Spracheinstellungen</li>
+            <br>
+            <li>toLocaleUpperCase(): In Großbuchstaben umwandeln unter Berücksichtigung der Spracheinstellungen</li>
+            <br>
+            <li>toLocaleLowerCase(): In Kleinbuchstaben umwandeln unter Berücksichtigung der Spracheinstellungen</li>
+            <br>
+            <li>toString(): String-Darstellung eines Werts</li>
+            <br>
+            <li>valueOf(): Primitive Wert eines String-Objekts</li>
+            <br>
+            <li>String.fromCharCode(): String aus Unicode-Werten erstellen</li>
+            <br>
+            <li>String.fromCodePoint(): String aus Unicode-Codepunkten erstellen</li>
+            <br>
+            <li>String.raw(): Rohstring erstellen</li>
+            <br>
+            <li>String.prototype.trimStart(): Leerzeichen am Anfang entfernen</li>
+            <br>
+            <li>String.prototype.trimEnd(): Leerzeichen am Ende entfernen</li>
+            <br>
+            <li>String.prototype.trimLeft(): Leerzeichen am Anfang entfernen (veraltet)</li>
+            <br>
+            <li>String.prototype.trimRight(): Leerzeichen am Ende entfernen (veraltet)</li>
+            <br>
+            <li>String.prototype.trim(): Leerzeichen am Anfang und Ende entfernen</li>
+            <br>
+            <li>String.prototype.replace(): Teilstring ersetzen</li>
+            <br>
+            <li>String.prototype.replaceAll(): Alle Vorkommen eines Teilstrings ersetzen</li>
+            <br>
+            <li>String.prototype.match(): Übereinstimmungen mit regulärem Ausdruck finden</li>
+            <br>
+            <li>String.prototype.search(): Position der ersten Übereinstimmung mit regulärem Ausdruck finden</li>
+            <br>
+            <li>String.prototype.split(): String in Array aufteilen</li>
+            <br>
+            <li>String.prototype.includes(): Überprüfen, ob ein Teilstring enthalten ist</li>
+            <br>
+            <li>String.prototype.startsWith(): Überprüfen, ob String mit einem Teilstring beginnt</li>
+            <br>
+            <li>String.prototype.endsWith(): Überprüfen, ob String mit einem Teilstring endet</li>
+            <br>
+            <li>String.prototype.charAt(): Zeichen an bestimmter Position</li>
+            <br>
+            <li>String.prototype.charCodeAt(): Unicode-Wert des Zeichens an bestimmter Position</li>
+            <br>
+            <li>String.prototype.concat(): Strings zusammenfügen</li>
+            <br>
+            <li>String.prototype.repeat(): String mehrfach wiederholen</li>
+            <br>
+            <li>String.prototype.padStart(): String auf bestimmte Länge auffüllen (am Anfang)</li>
+            <br>
+            <li>String.prototype.padEnd(): String auf bestimmte Länge auffüllen (am Ende)</li>
+            <br>
+            <li>String.prototype.normalize(): Unicode-Normalisierung</li>
+            <br>
+            <li>String.prototype.localeCompare(): Vergleich von Strings unter Berücksichtigung der Spracheinstellungen</li>
+            <br>
+            <li>String.prototype.toLocaleUpperCase(): In Großbuchstaben umwandeln unter Berücksichtigung der Spracheinstellungen</li>
+            <br>
+            <li>String.prototype.toLocaleLowerCase(): In Kleinbuchstaben umwandeln unter Berücksichtigung der Spracheinstellungen</li>
+            <br>
+            <li>String.prototype.toString(): String-Darstellung eines Werts</li>
+            <br>
+            <li>String.prototype.valueOf(): Primitive Wert eines String-Objekts</li>
+            <br>
+            <li>String.fromCharCode(): String aus Unicode-Werten erstellen</li>
+            <br>
+            <li>String.fromCodePoint(): String aus Unicode-Codepunkten erstellen</li>
+            <br>
+            <li>String.raw(): Rohstring erstellen</li>
+        </ul>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="sechundzwanzig">
+        <h2>Objekte & Klassen</h2>
+        <br>
+        <ul>
+            <li>object literal: Objekt mit geschweiften Klammern erstellen</li>
+            <br>
+            <li>this: Aktuelles Objekt referenzieren</li>
+            <br>
+            <li>class: Klasse deklarieren</li>
+            <br>
+            <li>constructor: Konstruktor-Methode</li>
+            <br>
+            <li>extends: Vererbung</li>
+            <br>
+            <li>super: Zugriff auf Elternklasse</li>
+            <br>
+            <li>static: Statische Methode oder Eigenschaft</li>
+            <br>
+            <li>get: Getter-Methode</li>
+            <br>
+            <li>set: Setter-Methode</li>
+            <br>
+            <li>instanceof: Überprüfen, ob Objekt Instanz einer Klasse ist</li>
+        </ul>
+    </div>
+    <br>
+    <div id="siebenundzwanzig">
+        <h2>DOM & Events</h2>
+        <br>
+        <ul>
+            <li>document.getElementById(): Element nach ID auswählen</li>
+            <br>
+            <li>document.querySelector(): Element mit CSS-Selektor auswählen</li>
+            <br>
+            <li>addEventListener(): Ereignislistener hinzufügen</li>
+            <br>
+            <li>removeEventListener(): Ereignislistener entfernen</li>
+            <br>
+            <li>event.target: Ziel des Ereignisses</li>
+            <br>
+            <li>event.preventDefault(): Standardverhalten verhindern</li>
+            <br>
+            <li>event.stopPropagation(): Ereignisweitergabe stoppen</li>
+            <br>
+            <li>click: Klick-Ereignis</li>
+            <br>
+            <li>mouseover: Maus über Element</li>
+            <br>
+            <li>mouseout: Maus verlässt Element</li>
+            <br>
+            <li>keydown: Taste gedrückt</li>
+            <br>
+            <li>keyup: Taste losgelassen</li>
+            <br>
+            <li>getElementById(): Element per ID holen</li>
+            <br>
+            <li>addEventListener(): Ereignis hinzufügen</li>
+            <br>
+            <li>removeEventListener(): Ereignis entfernen</li>
+            <br>
+            <li>innerHTML: HTML-Inhalt setzen</li>
+            <br>
+            <li>textContent: Textinhalt setzen</li>
+            <br>
+            <li>classList.add(): Klasse hinzufügen</li>
+            <br>
+            <li>classList.remove(): Klasse entfernen</li>
+            <br>
+            <li>classList.toggle(): Klasse umschalten</li>
+            <br>
+            <li>setAttribute(): Attribut setzen</li>
+            <br>
+            <li>getAttribute(): Attribut lesen</li>
+            <br>
+            <li>style: Inline-Styles ändern</li>
+        </ul>
+    </div>
+    <br>
+    <div id="achtundzwanzig">
+        <h2>Browser & Web-Apis</h2>
+        <br>
+        <ul>
+            <li>fetch(): Daten von einem Server abrufen</li>
+            <br>
+            <li>localStorage: Daten im Browser speichern</li>
+            <br>
+            <li>sessionStorage: Daten für die Sitzung speichern</li>
+            <br>
+            <li>WebSocket: Echtzeit-Kommunikation</li>
+            <br>
+            <li>Geolocation API: Standortinformationen abrufen</li>
+            <br>
+            <li>setTimeout(): Verzögerung</li>
+            <br>
+            <li>setInterval(): Wiederholung</li>
+            <br>
+            <li>clearTimeout(): Timeout stoppen</li>
+            <br>
+            <li>clearInterval(): Intervall stoppen</li>
+            <br>
+            <li>navigator: Browser-Infos</li>
+            <br>
+            <li>location: URL-Infos</li>
+            <br>
+            <li>history: Verlauf steuern</li>
+        </ul>
+    </div>
+    <br>
+    <div id="neunundzwanzig">
+        <h2>Fehlerbehandlung</h2>
+        <br>
+        <ul>
+            <li>try...catch: Fehler abfangen behandeln</li>
+            <br>
+            <li>throw: Fehler auslösen</li>
+            <br>
+            <li>finally: Code, der immer ausgeführt wird</li>
+        </ul>
+    </div>
+    <br>
+    <div id="dreissig">
+        <h2>Asynchrone Programmierung</h2>
+        <br>
+        <ul>
+            <li>async/await: Asynchrone Funktionen</li>
+            <br>
+            <li>Promise: Asynchrone Operationen verwalten</li>
+            <br>
+            <li>.then(): Erfolgshandler für Promises</li>
+            <br>
+            <li>.catch(): Fehlerhandler für Promises</li>
+            <br>
+            <li>.finally(): Wird immer ausgeführt</li>
+            <br>
+            <li>Promise.all(): Führt mehrere Promises parallel aus</li>
+            <br>
+            <li>Promise.race(): Liefert das schnellste Promise</li>
+            <br>
+            <li>Promise.allSettled(): Wartet auf alle Promises (egal ob Erfolg oder Fehler)</li>
+            <br>
+            <li>setTimeout(): Asynchrone Verzögerung</li>
+            <br>
+            <li>setInterval(): Asynchrone Wiederholung</li>
+            <br>
+            <li>queueMicrotask(): Führt Microtasks aus</li>
+            <br>
+            <li>AbortController: Bricht asynchrone Requests ab</li>
+        </ul>
+    </div>
+    <br>
+    <div id="einunddreissig">
+        <h2>Module</h2>
+        <br>
+        <ul>
+            <li>export: Funktionen oder Variablen exportieren</li>
+            <br>
+            <li>import: Funktionen oder Variablen importieren</li>
+            <br>
+            <li>Standard-Export: Standardmäßig exportieren</li>
+        </ul>
+    </div>
+    <br>
+    <div id="zweiunddreissig">
+        <h2>JSON & Speicher</h2>
+        <br>
+        <ul>
+            <li>JSON.stringify(): Objekt in JSON-String umwandeln</li>
+            <br>
+            <li>JSON.parse(): JSON-String in Objekt umwandeln</li>
+            <br>
+            <li>localStorage.setItem(): Daten im localStorage speichern</li>
+            <br>
+            <li>localStorage.getItem(): Daten aus localStorage abrufen</li>
+        </ul>
+    </div>
+    <br>
+    <h6 id="credits"><a href="mailto:omar.aly17@outlook.de">Designed by Omar</a></h6>
+    </body>
+</html>
